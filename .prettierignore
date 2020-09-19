@@ -1,0 +1,16 @@
+coverage
+examples
+**/node_modules/**
+package-lock.json
+*.png
+*.svg
+*.jpg
+*.map
+.env
+.env.tpl
+.prettierignore
+.gitignore
+*.log
+**/dist/**
+**/.next/**
+.next
