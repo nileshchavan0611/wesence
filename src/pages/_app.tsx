@@ -1,7 +1,8 @@
-import React from 'react';
-import '../styles/globals.scss';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import React from 'react';
+import Header from '../components/header';
+import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-navbutton-color" content="#A82929" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#A82929" />
       </Head>
+      <Header />
       <Component {...pageProps} />
     </main>
   );
