@@ -16,9 +16,10 @@ body {
 }
 
 .main {
+  margin-top: 0%;
   position: relative;
-  max-width: 400px;
-  @apply w-full h-full mx-auto px-4 py-20 text-center block;
+  max-width: 100%;
+  @apply w-full h-full mx-auto  text-center block;
 }
 
 .logo {
@@ -127,4 +128,44 @@ a {
   .copyright {
     @apply mt-16;
   }
+}
+.service {
+  background-color: #eaeaea;
+}
+.content_contact {
+  background-color: #efeff2;
+}
+.progress-section {
+  background-color: #1a1a1a;
+  color: white;
+}
+.progress-section .dummy-image2 {
+  margin-left: 150px;
+  margin-bottom: 244px;
+}
+.progress-section .dummy-image {
+  margin-right: 150px;
+}
+
+.logo_nav {
+  margin: 0%;
+  padding: 0%;
+  max-width: 30px;
+  margin-left: 150px;
+  margin-top: 0%;
+}
+.hero_content {
+  margin-left: 150px;
+  margin-top: 238px;
+}
+.hero_content .btn {
+  background-color: #a40102;
+  top: 483px;
+}
+.hero_content .text {
+  width: 475px;
+  opacity: 1;
+}
+.navbar {
+  background-color: #f4f4f4;
 }

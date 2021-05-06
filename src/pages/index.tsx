@@ -4,7 +4,12 @@ import Logo from '../components/logo';
 import Paragraph from '../components/paragraph';
 import Tagline from '../components/tagline';
 import Clients from '../components/clients';
-
+import DemoComponent from '../components/DemoComponent';
+import Service from '../components/Service';
+import ContactUs from '../components/ContactUs';
+import ProgressSectin from '../components/ProgressSectin';
+import OurClint from '../components/OurClint';
+import Navbar from '../components/Navbar';
 const AnimatedLogo = animated(Logo);
 const AnimatedParagraph = animated(Paragraph);
 
@@ -21,6 +26,13 @@ export default function Home(): JSX.Element {
 
   return (
     <>
+      <Navbar />
+      <ProgressSectin />
+      <Service />
+      <OurClint />
+      <DemoComponent />
+      <ContactUs />
+
       <AnimatedLogo />
       <Tagline />
       <AnimatedParagraph className="content" style={paragraphProps}>
