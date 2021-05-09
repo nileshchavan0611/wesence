@@ -15,6 +15,10 @@ body {
   @apply transition ease-in-out duration-500 transition-colors;
 }
 
+.bg-primary-color{
+  background-color: #A40102;
+}
+
 .main {
   margin-top: 0%;
   position: relative;
@@ -25,6 +29,20 @@ body {
 .logo {
   @apply mx-auto;
   max-width: 45px;
+}
+
+.heroSectionImage{
+  background: linear-gradient(180deg, rgba(244,244,244,1) 0%, rgba(244,244,244,1) 50%, rgba(26,26,26,1) 50%, rgba(26,26,26,1) 100%);
+  text-align: center;
+}
+
+
+.content_contact h1{
+  margin-bottom: 16px;
+}
+
+.content_contact li{
+  margin-bottom: 12px;
 }
 
 .name {
@@ -57,7 +75,7 @@ body {
 }
 
 .copyright {
-  @apply mt-24 mb-4;
+  text-align: left;
   font-size: 10px;
 }
 
@@ -109,7 +127,7 @@ a {
 
 @media (max-width: 1023px) {
   .main {
-    @apply py-16;
+    // @apply py-16;
   }
   .content {
     @apply mt-6;
@@ -139,33 +157,181 @@ a {
   background-color: #1a1a1a;
   color: white;
 }
-.progress-section .dummy-image2 {
-  margin-left: 150px;
-  margin-bottom: 244px;
-}
-.progress-section .dummy-image {
-  margin-right: 150px;
-}
 
 .logo_nav {
+  @apply mx-auto;
   margin: 0%;
   padding: 0%;
   max-width: 30px;
-  margin-left: 150px;
+  // margin-left: 150px;
   margin-top: 0%;
 }
 .hero_content {
-  margin-left: 150px;
-  margin-top: 238px;
+  background-color: #f4f4f4;
 }
 .hero_content .btn {
   background-color: #a40102;
-  top: 483px;
+  // top: 483px;
 }
-.hero_content .text {
-  width: 475px;
-  opacity: 1;
-}
+
 .navbar {
   background-color: #f4f4f4;
+}
+// progress-section page
+.prog_text {
+  @media (min-width: 1024px) {
+    font-size: 45px;
+    font-style: muli bold;
+  }
+  @media (max-width: 768px) {
+    font-size: 30px;
+    font-style: muli bold;
+  }
+}
+// hero page
+.hero_font {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 37px;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 20px;
+      // font-weight:  bold;
+    }
+  }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+}
+// service page text
+.text_service {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+// service page font
+.grid_text {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+.client_img{
+  width: 121px;
+  height: 41px;
+}
+// client page
+.client_text {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 30px;
+    }
+    .client_img {
+      width: 121px;
+      height: 41px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 25px;
+    }
+    .client_img {
+      width: 100px;
+      height: 31px;
+    }
+  }
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 18px;
+    }
+    .client_img {
+      width: 70px;
+      height: 18px;
+    }
+  }
+}
+// work with us fonts democomponent
+.work_with_us {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+// contact page font size
+.contact_text {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 16px;
+    }
+    li {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 12px;
+    }
+    li {
+      font-size: 8px;
+    }
+  }
 }

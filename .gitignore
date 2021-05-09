@@ -13,6 +13,7 @@ node_modules
 # Prod Bundle
 build
 dist
+out
 
 # env
 .env

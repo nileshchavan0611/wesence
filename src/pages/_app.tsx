@@ -4,9 +4,11 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main className="main">
+
       <Head>
         <meta content="ie=edge" httpEquiv="x-ua-compatible" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
