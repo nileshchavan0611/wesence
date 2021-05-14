@@ -15,8 +15,8 @@ body {
   @apply transition ease-in-out duration-500 transition-colors;
 }
 
-.bg-primary-color{
-  background-color: #A40102;
+.bg-primary-color {
+  background-color: #a40102;
 }
 
 .main {
@@ -31,17 +31,22 @@ body {
   max-width: 45px;
 }
 
-.heroSectionImage{
-  background: linear-gradient(180deg, rgba(244,244,244,1) 0%, rgba(244,244,244,1) 50%, rgba(26,26,26,1) 50%, rgba(26,26,26,1) 100%);
+.heroSectionImage {
+  background: linear-gradient(
+    180deg,
+    rgba(244, 244, 244, 1) 0%,
+    rgba(244, 244, 244, 1) 50%,
+    rgba(26, 26, 26, 1) 50%,
+    rgba(26, 26, 26, 1) 100%
+  );
   text-align: center;
 }
 
-
-.content_contact h1{
+.content_contact h1 {
   margin-bottom: 16px;
 }
 
-.content_contact li{
+.content_contact li {
   margin-bottom: 12px;
 }
 
@@ -263,7 +268,7 @@ a {
     }
   }
 }
-.client_img{
+.client_img {
   width: 121px;
   height: 41px;
 }
@@ -336,7 +341,7 @@ a {
   }
 }
 
-.modal{
+.modal {
   position: fixed;
   top: 0%;
   left: 0%;
@@ -347,6 +352,6 @@ a {
   // overflow: scroll;
   border: 1px solid #ccc;
 }
-.fileupload{
+.fileupload {
   display: none;
 }
