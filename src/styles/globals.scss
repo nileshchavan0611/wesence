@@ -1,5 +1,352 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400..900&display=swap');
 
 @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+
+html {
+  font-family: Muli, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: auto;
+  background: #fff;
+  color: #222;
+
+  @apply transition ease-in-out duration-500 transition-colors;
+}
+
+.bg-primary-color{
+  background-color: #A40102;
+}
+
+.main {
+  margin-top: 0%;
+  position: relative;
+  max-width: 100%;
+  @apply w-full h-full mx-auto  text-center block;
+}
+
+.logo {
+  @apply mx-auto;
+  max-width: 45px;
+}
+
+.heroSectionImage{
+  background: linear-gradient(180deg, rgba(244,244,244,1) 0%, rgba(244,244,244,1) 50%, rgba(26,26,26,1) 50%, rgba(26,26,26,1) 100%);
+  text-align: center;
+}
+
+
+.content_contact h1{
+  margin-bottom: 16px;
+}
+
+.content_contact li{
+  margin-bottom: 12px;
+}
+
+.name {
+  @apply mt-3 mx-auto font-extrabold;
+  font-size: 14px;
+}
+
+.tagline {
+  font-size: 20px;
+  @apply mt-3 font-extrabold text-center;
+}
+
+.content {
+  @apply mt-10 text-center mx-auto;
+  max-width: 353px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.contact {
+  @apply mt-16 font-bold;
+  font-size: 14px;
+
+  a {
+    @apply font-black;
+    letter-spacing: 0.42px;
+  }
+}
+
+.copyright {
+  text-align: left;
+  font-size: 10px;
+}
+
+a {
+  outline: none !important;
+
+  &:hover {
+    color: #a82929;
+    opacity: 1;
+  }
+}
+
+.clients {
+  @apply w-full mt-16;
+
+  h4 {
+    @apply text-center mb-1 font-bold;
+    font-size: 16px;
+  }
+
+  ul {
+    @apply grid grid-cols-3 gap-4 items-center w-full;
+  }
+
+  img {
+    @apply mx-auto;
+    max-width: 4.5rem;
+    max-height: 3.25rem;
+    display: block;
+    opacity: 0.6;
+  }
+}
+
+.hide {
+  @apply hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #212121;
+    filter: invert(1);
+
+    svg,
+    a:hover {
+      filter: invert(1);
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .main {
+    // @apply py-16;
+  }
+  .content {
+    @apply mt-6;
+  }
+  .clients {
+    @apply mt-10;
+    h4 {
+      @apply mb-4;
+    }
+
+    ul {
+      @apply grid-cols-2 gap-6 mx-auto;
+      max-width: 220px;
+    }
+  }
+  .copyright {
+    @apply mt-16;
+  }
+}
+.service {
+  background-color: #eaeaea;
+}
+.content_contact {
+  background-color: #efeff2;
+}
+.progress-section {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.logo_nav {
+  @apply mx-auto;
+  margin: 0%;
+  padding: 0%;
+  max-width: 30px;
+  // margin-left: 150px;
+  margin-top: 0%;
+}
+.hero_content {
+  background-color: #f4f4f4;
+}
+.hero_content .btn {
+  background-color: #a40102;
+  // top: 483px;
+}
+
+.navbar {
+  background-color: #f4f4f4;
+}
+// progress-section page
+.prog_text {
+  @media (min-width: 1024px) {
+    font-size: 45px;
+    font-style: muli bold;
+  }
+  @media (max-width: 768px) {
+    font-size: 30px;
+    font-style: muli bold;
+  }
+}
+// hero page
+.hero_font {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 37px;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 20px;
+      // font-weight:  bold;
+    }
+  }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+}
+// service page text
+.text_service {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+// service page font
+.grid_text {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+.client_img{
+  width: 121px;
+  height: 41px;
+}
+// client page
+.client_text {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 30px;
+    }
+    .client_img {
+      width: 121px;
+      height: 41px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 25px;
+    }
+    .client_img {
+      width: 100px;
+      height: 31px;
+    }
+  }
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 18px;
+    }
+    .client_img {
+      width: 70px;
+      height: 18px;
+    }
+  }
+}
+// work with us fonts democomponent
+.work_with_us {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+// contact page font size
+.contact_text {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 16px;
+    }
+    li {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 12px;
+    }
+    li {
+      font-size: 8px;
+    }
+  }
+}
+
+.modal{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgb(234, 234, 234);
+  // overflow: scroll;
+  border: 1px solid #ccc;
+}
+.fileupload{
+  display: none;
+}
